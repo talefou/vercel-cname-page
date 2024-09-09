@@ -11,7 +11,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center h-screen p-8 pb-20" style={{ height: '-webkit-fill-available' }}>
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center h-screen p-8 pb-5" style={{ height: '-webkit-fill-available' }}>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <div className="flex flex-col gap-4 items-center">
           <h1 className="text-3xl font-bold text-center sm:text-left">
@@ -23,7 +23,7 @@ const Home = () => {
             为您的 Vercel 项目绑定自定义域名
           </li>
           <li className="my-2">
-            设置 DNS 为 {" "}
+            替换 CNAME 为 {" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
               {cname}
             </code>

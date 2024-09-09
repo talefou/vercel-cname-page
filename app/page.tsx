@@ -1,4 +1,15 @@
+"use client"
+import { cname_list } from "@/lib/utils";
+import { useEffect, useState } from "react";
+
 const Home = () => {
+  const [cname, setCname] = useState(cname_list[0]);
+
+  useEffect(() => {
+    const host = window.location.host;
+    if (cname_list.includes(host)) setCname(host);
+  }, []);
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center h-screen p-8 pb-20" style={{ height: '-webkit-fill-available' }}>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
@@ -12,9 +23,9 @@ const Home = () => {
             为您的 Vercel 项目绑定自定义域名
           </li>
           <li className="my-2">
-            将 DNS 设置为 {" "}
+            设置 DNS 为 {" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              cname-vc.9420.ltd
+              {cname}
             </code>
           </li>
           <li>

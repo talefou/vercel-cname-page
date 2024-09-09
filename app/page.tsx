@@ -18,7 +18,7 @@ const Home = () => {
             </code>
           </li>
           <li>
-            体验针对 CN 用户的 Vercel 分运营商优化 DNS
+            体验针对 CN 用户优化的 Vercel DNS
           </li>
         </ol>
       </main>
@@ -29,7 +29,7 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          by xcsoft
+          xcsoft
         </a>
       </footer>
     </div>

@@ -1,4 +1,4 @@
-[![vercel-cname-page](https://socialify.cmds.run/soxft/vercel-cname-page/image?description=1&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fsoxft%2Fvercel-cname-page%2Fmain%2Fapp%2Ffavicon.ico&name=1&owner=1&theme=Light)](https://cname-vc.9420.ltd)
+[![vercel-cname-page](https://socialify.cmds.run/soxft/vercel-cname-page/image?description=1&font=Source%20Code%20Pro&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fsoxft%2Fvercel-cname-page%2Fmain%2Fapp%2Ffavicon.png&name=1&owner=1&pattern=Circuit%20Board&theme=Dark)](https://cname-vc.9420.ltd)
 
 # Vercel Fast DNS
 

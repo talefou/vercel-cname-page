@@ -8,10 +8,18 @@ const Home = () => {
   useEffect(() => {
     const host = window.location.host;
     if (cname_list.includes(host)) setCname(host);
+
+    const updateVh = () => {
+      document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+    }
+
+    window.addEventListener('resize', updateVh);
+    window.addEventListener('orientationchange', updateVh);
+    updateVh(); // Initial call
   }, []);
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center h-screen p-8 pb-5" style={{ height: '-webkit-fill-available' }}>
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center h-full p-8 pb-5">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <div className="flex flex-col gap-4 items-center">
           <h1 className="text-3xl font-bold text-center sm:text-left">

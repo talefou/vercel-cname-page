@@ -94,6 +94,13 @@ body {
   }
 }
 
-.h-full {
-  height: calc(var(--vh, 1vh) * 100);
+.h-avaliable {
+  height: 100vh; /* 默认高度 */
+}
+
+/* 针对 iOS Safari 的特殊处理 */
+@supports (-webkit-touch-callout: none) {
+  .h-avaliable {
+    height: -webkit-fill-available;
+  }
 }
